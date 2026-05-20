@@ -2,11 +2,11 @@ import asyncio
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))
 
-from chess import ChessGame
+from chess_game import ChessGame
 
 async def main():
     image_dir = Path(__file__).resolve().parent / "chess"
