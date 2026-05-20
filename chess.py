@@ -250,7 +250,6 @@ class ChessGame:
     def turn(self):
         return self.__turn
 
-    @property
     def is_running(self):
         return self.__running
 
